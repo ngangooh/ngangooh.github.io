@@ -91,12 +91,14 @@
 
 				for (let j in x.daftar) {
 					let y = x.daftar[j];
-					htm += '<div class="col-sm-3 mb-3 mb-sm-0"><div class="card bg-warning-subtle">';
+					htm += '<div class="col-sm-4 p-0 py-2">';
+					htm += '<div class="card rounded-0 bg-warning-subtle">';
 					htm += '<img src="img/' + y.gambar + '" class="card-img-top px-2 pt-2" alt="' + y.nama + '" />';
-					htm += '<div class="card-body"><h5 class="card-title">' + y.nama + ' <span class="badge text-bg-primary float-end">' + y.harga + '</span>';
+					htm += '<div class="card-body">';
+					htm += '<h5 class="card-title">' + y.nama + ' <span class="badge text-bg-primary float-end">' + y.harga + '</span>';
 					if (y.laris) htm += ' <span class="badge text-bg-success float-end me-1">Terlaris</span>';
-					htm += '</h5></div>';
-					htm += '</div></div>';
+					htm += '</h5>';
+					htm += '</div></div></div>';
 				}
 				htm += '</section>';
 			}
