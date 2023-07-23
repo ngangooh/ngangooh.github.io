@@ -10,12 +10,12 @@
 		<!-- Navbar -->
 		<nav class="navbar navbar-expand-lg fixed-top" data-bs-theme="dark" style="background-color: #b55139">
 			<div class="container">
-				<a class="navbar-brand" href="#">Sri Rejeki</a>
+				<h2><a class="navbar-brand fs-2 fst-italic fw-bold" href="#">Sri Rejeki</a></h2>
 				<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
 					<span class="navbar-toggler-icon"></span>
 				</button>
 				<div class="collapse navbar-collapse" id="navbarNav">
-					<ul class="navbar-nav ms-auto">
+					<ul class="navbar-nav ms-auto fw-bold">
 						<li class="nav-item">
 							<a class="nav-link active" aria-current="page" href="#berat">Makanan Berat</a>
 						</li>
@@ -87,7 +87,7 @@
 			for (let i in data.jenis) {
 				let x = data.jenis[i];
 				htm += '<section id="' + x.anchor + '" class="w-100" style="padding-top: 3.5rem">';
-				htm += '<h2 class="text-white text-center py-2 sticky-top" style="background-color: #476040;top: 3.5rem">' + x.tipe + '</h2><div class="row mx-auto">';
+				htm += '<h4 class="text-white text-center py-2 sticky-top" style="background-color: #476040;top: 3.5rem">' + x.tipe + '</h4><div class="row mx-auto">';
 
 				for (let j in x.daftar) {
 					let y = x.daftar[j];
