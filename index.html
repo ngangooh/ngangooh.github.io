@@ -87,7 +87,7 @@
 			for (let i in data.jenis) {
 				let x = data.jenis[i];
 				htm += '<section id="' + x.anchor + '" class="w-100" style="padding-top: 3.5rem">';
-				htm += '<h2 class="text-white text-center py-2" style="background-color: #476040">' + x.tipe + '</h2><div class="row mx-auto">';
+				htm += '<h2 class="text-white text-center py-2 sticky-top" style="background-color: #476040;top: 3.5rem">' + x.tipe + '</h2><div class="row mx-auto">';
 
 				for (let j in x.daftar) {
 					let y = x.daftar[j];
