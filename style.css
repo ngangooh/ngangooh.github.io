@@ -1,0 +1,7 @@
+td:nth-child(2) {
+	text-align: right;
+}
+
+table tr {
+	height: 3rem;
+}
